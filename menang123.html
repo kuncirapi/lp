@@ -1521,7 +1521,7 @@
                 src="https://kuncirapi.github.io/lp/images/register.gif"></amp-img>
             Daftar
         </a>
-        <a href="https://direct.lc.chat/14027805/" rel="nofollow noreferrer" target="_blank">
+      <a id="link_livechat" rel="nofollow noreferrer" target="_blank">
             <amp-img layout="intrinsic" height="75" width="75"
                 src="https://kuncirapi.github.io/lp/images/livechat.gif"></amp-img>
             Livechat
@@ -1540,6 +1540,7 @@
         const link4 = document.getElementById('link_body_register');
         const link5 = document.getElementById('link_footer_daftar');
         const link6 = document.getElementById('link_footer_whatsapp');
+        const link7 = document.getElementById('link_livechat');
 
         // Come from ads
         if (queryString.length > 0) {
@@ -1549,6 +1550,7 @@
             link4.href = domainName + queryString;
             link5.href = domainName + queryString;
             link6.href = domainName + queryString;
+            link7.href = domainName + queryString;
         }
         // Come from google discovery
         else {
@@ -1558,6 +1560,7 @@
             link4.href = domainName + referral;
             link5.href = domainName + referral;
             link6.href = domainName + referral;
+            link7.href = domainName + referral;
         }
     </script>
 </body>
